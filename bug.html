@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Bug</title>
+    <link rel="stylesheet" href="bug.css">
+    <link rel="stylesheet" href="bug.js" class="js">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logoContainer">
+                <a href="home.html" class="logoLink">
+                    <img src="header/logoP.png" class="logoP" alt="Logo P">
+                    <img src="header/headerR.png" class="headerR" alt="Header R">
+                </a>
+            </div>
+            <button class="col" id="menuButton">☰</button>
+            <div class="nav-links active" id="navlinks">
+                <a href="home.html">Home</a>
+                <a href="maps.html">Maps</a>
+                <a href="agent.html">Agents</a>
+                <a href="news.html">News</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <h1>Report Bug</h1>
+            <form action="#" method="POST" id="bugReportForm" onsubmit="return validateData(event)">
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="Enter your username" id="username">
+            
+                <label for="server">Server</label>
+                <input type="text" name="server" placeholder="Enter your server" id="server">
+            
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter your email" id="email">
+            
+                <label for="description">Detail description of The Bug</label>
+                <textarea name="description" rows="5" placeholder="Describe the bug in detail" id="description"></textarea>
+            
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agreement">
+                    <label for="agreement">
+                        I agree with all the consequences of this report and the data is already correct.
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>2602212016 - Rasya Nuhaifa Movia</p>
+            <div class="social-icons">
+                <p>Social Media</p>
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/VALORANTid/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@valorant"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <p>Los Angeles, California</p>
+        </div>
+    </footer>
+</body>
+    <script src="menu.js"></script>
+    <script src="bug.js"></script>
+</html>
